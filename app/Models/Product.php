@@ -16,9 +16,4 @@ class Product extends Model
         'stock',
         'image'
     ];
-
-    public function getImageUrlAttribute(): string
-    {
-        return asset('storage/' . $this->logo);
-    }
 }
